@@ -1,5 +1,4 @@
-# reformed-website
-alzheimer's App satatic Site
+#alzheimer's App satatic Site
 
 ## Build Setup
 
