@@ -19,7 +19,9 @@
     "type": "git",
     "url": "https://github.com/shahriar1/reformed-website"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bulma": "^0.7.1"
+  },
   "devDependencies": {
     "browser-sync": "2.18.13",
     "gulp": "^3.9.1",

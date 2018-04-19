@@ -1,34 +1,49 @@
-
-
-/* Table of content
+/*
 --------------------------------------------
-1. General
+ Color variable
 ------------------------------------------*/
- .searchBody{
-      margin-top: 30px;
-    }
-  .searchIcon{
+$basic-color: #e95420;
+$light-color: #fafafa;
+$gray-color: #545454;
+
+/*
+--------------------------------------------
+ Search main page and search activities page css
+------------------------------------------*/
+
+
+body {
+  font-family: arial, sans-serif;
+}
+.searchBody {
+  margin-top: 30px;
+  .searchIcon {
     padding: 0 10px;
   }
-  .searchIcon .fa-search{
+  .searchIcon .fa-search {
     margin-top: 5px;
   }
-
-body{
-        font-family: arial,sans-serif;
+  .plusIcon {
+    margin-right: 5px;
   }
-   article.post {
+  .activitiesButton {
+    margin-top: 4px;
+  }
+}
+
+.serachActivities {
+  .post {
     margin: 1rem;
     padding-bottom: 1.5rem;
   }
-  .post{
+  .post {
     line-height: 1.4;
     word-wrap: break-word;
     font-size: small;
-    color: #545454;
+    color: $gray-color;
   }
-  .post h4{
-    color: blue;
+  .post h4 {
+    color: $link;
     font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -36,76 +51,72 @@ body{
     white-space: nowrap;
     margin-bottom: 10px;
   }
-  .topBox{
-    background: #fafafa;
+  .topBox {
+    background: $light-color;
     height: 170px;
   }
-  .topSearchBlock{
+  .topSearchBlock {
     padding-top: 40px;
   }
   .navbar-item img {
     max-height: 4.5rem;
   }
-  .articleContent{
+  .articleContent {
     padding-left: 20px;
   }
   i.fa.fa-search {
     margin-top: 10px;
-    color: #e95420;
+    color: $basic-color;
   }
-  .dateOneBlock{
+  .dateOneBlock {
     margin-bottom: 30px;
   }
-  .bottomBorder{
-    border-bottom: 2px solid #e95420;
+  .bottomBorder {
+    border-bottom: 2px solid $basic-color;
     display: block;
     margin-left: 35px;
   }
-.navbar{
-  background: #fafafa;
-  padding-top: 20px;
-}
-.navbar-brand{
+  .navbar {
+    background: $light-color;
+    padding-top: 20px;
+  }
+  .navbar-brand {
     justify-content: center;
   }
   .content:not(:last-child) {
     margin-bottom: 1rem;
   }
-  .listContent::before { 
+  .listContent::before {
     content: "»";
-    color: #e95420;
+    color: $basic-color;
     font-size: 18px;
   }
   .dateTitle {
     margin-left: 15px;
+  }
+  @media only screen and (max-width:780px) {
+    .topBox {
+      background: $light-color;
+      height: auto;
+    }
+    .searchBox {
+      padding: 0 20px 30px;
+    }
+    .topSearchBlock {
+      padding-top: 0px;
+    }
+    .articleContent {
+      padding-left: 0px;
+    }
+    .navbar-brand {
+      justify-content: center;
+    }
+    .bottomBorder {
+      border-bottom: 1px solid $basic-color;
+      display: block;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
 }
-.activitiesButton{
-  margin-top:4px;
-}
-   @media only screen and (max-width:780px) {
-   
-    .topBox{
-    background: #fafafa;
-    height: auto;
-  }
-  .searchBox{
-    padding: 0 20px 30px;
-  }
-  .topSearchBlock{
-    padding-top: 0px;
-  }
-  .articleContent{
-    padding-left: 0px;
-  }
-  .navbar-brand{
-    justify-content: center;
-  }
-   .bottomBorder{
-    border-bottom: 1px solid #e95420;
-    display: block;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  }
-
 
