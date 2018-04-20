@@ -120,3 +120,76 @@ body {
   }
 }
 
+.indicatorIcon{
+  @media (min-width: 769px){
+    .intro>span.pe_start {
+      bottom: 6px;
+  }
+  }
+  .intro>.pe_start {
+    position: absolute;
+    cursor: pointer;
+    font-size: 15px;
+    color: #4d6eb3;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    white-space: normal;
+    text-align: left;
+}
+.intro>.pe_start .start-down-icon {
+  top: -12px;
+  left: 0;
+  box-sizing: content-box;
+}
+.start-down-icon {
+  border: 4px solid #4e6eb3;
+  border-radius: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  top: 150px;
+  left: -8px;
+  position: relative;
+}
+.ico-start-down {
+  background-image: url(https://www.startpage.com/graphics/sprite.png);
+  background-position: -28px -49px;
+  width: 13px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  margin-top: 11px;
+}
+.intro>.pe_start {
+  position: absolute;
+  cursor: pointer;
+  font-size: 15px;
+  color: #4d6eb3;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  white-space: normal;
+  text-align: left;
+}
+.start-down-icon:hover .ico-start-down {
+  -ms-transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+}
+
